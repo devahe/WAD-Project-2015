@@ -2,10 +2,36 @@
 <html>
 	<head>
 		<title>WAD Project</title>
-		<link rel="stylesheet" href="styles.css">
-		<script src="scripts.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="scripts.js"></script> <!--is this still required? DvH 04.11.2015-->
 	</head>
 	<body>
-		<h1>Initial file</h1>
+		<div class="navbar-static-top"> <!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
+			<div class="container">
+				<div class="navbar-brand">
+					Classifieds
+				</div>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					Menu
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">Home</a></li>
+						<li><a href="">View Ads</a></li>
+						<li><a href="">Create Ad</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h1>Initial file</h1>
+			<h2>bootstrap testing</h2>
+		</div>
+		
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 	</body>
 </html>
