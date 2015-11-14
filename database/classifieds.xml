@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classifieds>
+	<advert>
+		<title></title>
+		<description></description>
+		<category></category>
+		<price></price>
+		<location></location>
+		<seller></seller>
+		<date></date>
+	</advert>
+</classifieds>
