@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classifieds>
+	<advert>
+		<title>Car for Sale</title>
+		<description>I have a nissan for sale</description>
+		<category>Cars</category>
+		<price>2000</price>
+		<location>Dublin</location>
+		<seller>Dennis</seller>
+		<date>15.11.2015</date>
+	</advert>
+	<advert>
+		<title>Puppies</title>
+		<description>4 german shepherds on offer</description>
+		<category>Animals</category>
+		<price>tbd</price>
+		<location>Cork</location>
+		<seller>Snoop Dog</seller>
+		<date>10.10.2015</date>
+	</advert>
+</classifieds>
