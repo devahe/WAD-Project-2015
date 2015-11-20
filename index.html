@@ -7,6 +7,16 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<script src="scripts.js" type="text/javascript"></script>
 
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
 	</head>
 	<body>
 		<div class="navbar-static-top"> <!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
@@ -42,7 +52,7 @@
 					Proin eget odio vel dolor imperdiet consectetur sit amet sed purus. Suspendisse augue diam, feugiat ut placerat sit amet, 
 					interdum a lacus. Mauris rutrum porttitor magna at sollicitudin. Aenean justo nisl, interdum sit amet libero hendrerit, 
 					condimentum bibendum dui. Nunc feugiat commodo risus non sagittis. </p>
-					<a href="#" class="btn btn-success">View Ads</a>
+					<a href="#" class="btn btn-success" onclick="loadXMLDoc()">View Ads</a>
 				</div>
 				<div class="col-md-4">
 					<h2 class="text-center">Submit Ad</h2>
@@ -127,6 +137,61 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
+
+<button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
+<br><br>
+<table id="demo"></table>
+<div id='showAd'></div>
+
+<script> //code from W3Schools -> http://www.w3schools.com/xml/tryit.asp?filename=tryxml_display_table
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      myFunction(xmlhttp);
+    }
+  };
+  xmlhttp.open("GET", "database/classifieds.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Title</th><th>Description</th><th>Category</th><th>Price</th><th>Location</th><th>Seller</th><th>Date</th></tr>";
+  var x = xmlDoc.getElementsByTagName("advert");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("location")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("seller")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+
+// function myFunction(xml, i) {
+//     var xmlDoc = xml.responseXML; 
+//     var x = xmlDoc.getElementsByTagName("advert");
+//     document.getElementById("showAd").innerHTML =
+//     "Title: " +
+//     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+//     "<br>Description: " +
+//     x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+//     "<br>Category: " + 
+//     x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue;
+// }
+</script>
+
 
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.js"></script>
