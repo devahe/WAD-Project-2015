@@ -1,23 +1,25 @@
-.jumbotron
-{
-background-image:url('../images/classifieds.png');
-background-attachment:fixed;
-min-height:350px;
-margin-bottom:0px;
+.jumbotron {
+    background-image: url('../images/classifieds.png');
+    background-attachment: fixed;
+    min-height: 350px;
+    margin-bottom: 0px;
 }
 
-#viewAds
-{
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
+#viewAds {
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
 }
 
-table,th,td {
-  border : 1px solid black;
-  border-collapse: collapse;
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
-th,td {
-  padding: 5px;
+
+th,
+td {
+    padding: 5px;
 }

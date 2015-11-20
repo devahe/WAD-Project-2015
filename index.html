@@ -1,149 +1,148 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>WAD Project</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<script src="scripts.js" type="text/javascript"></script>
 
-<style>
-table,th,td {
-  border : 1px solid black;
-  border-collapse: collapse;
-}
-th,td {
-  padding: 5px;
-}
-</style>
+<head>
+	<title>WAD Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/scripts.js" type="text/javascript"></script>
 
-	</head>
-	<body>
-		<div class="navbar-static-top"> <!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
-			<div class="container">
-				<div class="navbar-brand">
-					Classifieds
-				</div>
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-					Menu
-				</button>
-				<div class="collapse navbar-collapse navHeaderCollapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="">Home</a></li>
-						<li><a href="">View Ads</a></li>
-						<li><a href="">Create Ad</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</div>
+</head>
+
+<body>
+	<div class="navbar-static-top">
+		<!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
+		<div class="container">
+			<div class="navbar-brand">
+				Classifieds
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">Home</a></li>
+					<li><a href="">View Ads</a></li>
+					<li><a href="">Create Ad</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
 			</div>
 		</div>
+	</div>
 	<div class="jumbotron">
-			<div class="container">
-				<h1>Classified Ads</h1>
-				<p>Insert Text</p>
-				<p><a href="http://www.google.com" target="_blank" class="btn btn-primary btn-lg">Button for testing only</a></p>
-			</div>
+		<div class="container">
+			<h1>Classified Ads</h1>
+			<p>Insert Text</p>
+			<p><a href="http://www.google.com" target="_blank" class="btn btn-primary btn-lg">Button for testing only</a></p>
 		</div>
-				<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h2 class="text-center">View Ads</h2>
-					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mollis enim. Proin rhoncus imperdiet dui id suscipit. 
-					Proin eget odio vel dolor imperdiet consectetur sit amet sed purus. Suspendisse augue diam, feugiat ut placerat sit amet, 
-					interdum a lacus. Mauris rutrum porttitor magna at sollicitudin. Aenean justo nisl, interdum sit amet libero hendrerit, 
-					condimentum bibendum dui. Nunc feugiat commodo risus non sagittis. </p>
-					<a href="#" class="btn btn-success" onclick="loadXMLDoc()">View Ads</a>
-				</div>
-				<div class="col-md-4">
-					<h2 class="text-center">Submit Ad</h2>
-					<p class="text-justify">Duis porttitor elementum dolor, id luctus elit pharetra vel. Sed tincidunt dolor at odio auctor, at condimentum elit 
-					tincidunt. Donec porta suscipit velit, non lobortis turpis vulputate id. Mauris rutrum, dui lacinia faucibus malesuada, 
-					mi lectus tristique leo, ac fringilla tortor urna vel orci.</p>
-					<a href="#" class="btn btn-success">Submit Ad</a>
-				</div>
-				<div class="col-md-4">
-					<h2 class="text-center">Contact Us</h2>
-					<p class="text-justify">Aliquam congue purus nisi, sed luctus massa maximus quis. Nulla faucibus malesuada sapien, a mollis ante consequat eget. 
-					Nunc tincidunt volutpat elementum. Maecenas lorem ex, tristique et egestas sed, placerat id mauris. Nullam accumsan orci nisi, 
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center">View Ads</h2>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mollis enim. Proin rhoncus imperdiet dui id suscipit. Proin eget odio vel dolor imperdiet consectetur sit amet sed purus. Suspendisse augue diam, feugiat ut placerat sit amet, interdum
+					a lacus. Mauris rutrum porttitor magna at sollicitudin. Aenean justo nisl, interdum sit amet libero hendrerit, condimentum bibendum dui. Nunc feugiat commodo risus non sagittis. </p>
+				<a id="viewAds" href="#" class="btn btn-success" onclick="loadXMLDoc()">View Ads</a>
+				<br>
+				<br>
+				<table id="demo"></table>
+			</div>
+			<div class="col-md-12">
+				<h2 class="text-center">Submit Ad</h2>
+				<p class="text-justify">Duis porttitor elementum dolor, id luctus elit pharetra vel. Sed tincidunt dolor at odio auctor, at condimentum elit tincidunt. Donec porta suscipit velit, non lobortis turpis vulputate id. Mauris rutrum, dui lacinia faucibus malesuada, mi lectus
+					tristique leo, ac fringilla tortor urna vel orci.</p>
+				<a href="#" class="btn btn-success">Submit Ad</a>
+			</div>
+			<div class="col-md-12">
+				<h2 class="text-center">Contact Us</h2>
+				<p class="text-justify">Aliquam congue purus nisi, sed luctus massa maximus quis. Nulla faucibus malesuada sapien, a mollis ante consequat eget. Nunc tincidunt volutpat elementum. Maecenas lorem ex, tristique et egestas sed, placerat id mauris. Nullam accumsan orci nisi,
 					eget rhoncus arcu hendrerit ac. Vestibulum vulputate feugiat arcu sed luctus. Nam eget auctor lorem, in commodo lectus.</p>
-					<a href="#" class="btn btn-success">Contact Us</a>
-				</div>
+				<a href="#" class="btn btn-success">Contact Us</a>
 			</div>
 		</div>
-		<hr />
-		
-		<!--responsive image 1  BG 14\11\2015-->
-<div class="container">
+	</div>
+	<hr />
+
+	<!--responsive image 1  BG 14\11\2015-->
+	<div class="container">
 		<div class="row padding">
 			<div class="col-md-6">
-				<img src="images/1.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="images/1.jpg" class="img-circle img-responsive" alt="Circular holding image" />
 			</div>
 			<div class="col-md-6">
 				<h2 class="text-center">Add 1</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			
+				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non
+					mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida
+					at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+
 			</div>
-		</div>	
+		</div>
 		<hr />
-		
+
 		<!--responsive image 2  BG 14\11\2015-->
-<div class="container">
-		<div class="row padding">			
-		  <div class="col-md-6">
-				<h2 class="text-center">Add 2</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-							
-			</div>
-			<div class="col-md-6">
-				<img src="images/2.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
-			</div>
-		</div>	
-		<hr />
-		
-		<!--responsive image 3  BG 14\11\2015-->
-  <div class="container">
-		<div class="row padding">
-			<div class="col-md-6">
-				<img src="images/3.jpg" class="img-circle img-responsive" alt="Circular holding image"/>
-			</div>
-			<div class="col-md-6">
-				<h2 class="text-center">Add 3</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				
-			</div>
-		</div>	
-		<hr />
-		<!--contact form  BG 14\11\2015-->
-		
 		<div class="container">
-			<h2 class="text-center">Contact us</h2>
-		<form role="form">
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
-			</div>
-			<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
-			
-			</div>
-			<div class="form-group">
-				<label for="message">Message:</label>
-				<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
-			</div>
-			<div class="form-group">
-				<input type="checkbox" /> Send me new adverts
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
-	</div>
+			<div class="row padding">
+				<div class="col-md-6">
+					<h2 class="text-center">Add 2</h2>
+					<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit
+						non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta
+						gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 
-<button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
-<br><br>
-<table id="demo"></table>
-<div id='showAd'></div>
+				</div>
+				<div class="col-md-6">
+					<img src="images/2.jpg" class="img-circle img-responsive" alt="Circular holding image" />
+				</div>
+			</div>
+			<hr />
 
-<script> //code from W3Schools -> http://www.w3schools.com/xml/tryit.asp?filename=tryxml_display_table
+			<!--responsive image 3  BG 14\11\2015-->
+			<div class="container">
+				<div class="row padding">
+					<div class="col-md-6">
+						<img src="images/3.jpg" class="img-circle img-responsive" alt="Circular holding image" />
+					</div>
+					<div class="col-md-6">
+						<h2 class="text-center">Add 3</h2>
+						<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit
+							non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta
+							gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+
+					</div>
+				</div>
+				<hr />
+				<!--contact form  BG 14\11\2015-->
+
+				<div class="container">
+					<h2 class="text-center">Contact us</h2>
+					<form role="form">
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" />
+						</div>
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your name here" />
+
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" /> Send me new adverts
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+
+
+				<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+				<script src="js/bootstrap.js"></script>
+
+
+
+<script>
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -178,23 +177,8 @@ function myFunction(xml) {
   }
   document.getElementById("demo").innerHTML = table;
 }
-
-// function myFunction(xml, i) {
-//     var xmlDoc = xml.responseXML; 
-//     var x = xmlDoc.getElementsByTagName("advert");
-//     document.getElementById("showAd").innerHTML =
-//     "Title: " +
-//     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-//     "<br>Description: " +
-//     x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
-//     "<br>Category: " + 
-//     x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue;
-// }
 </script>
 
+</body>
 
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		
-	</body>
 </html>
