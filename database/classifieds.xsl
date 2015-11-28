@@ -6,7 +6,7 @@
 <table border="2" bgcolor="yellow">
 <tr>
 <th>Title</th>
-<th>Artist</th>
+<th>Description</th>
 </tr>
 <xsl:for-each select="classifieds/advert">
 <tr>
@@ -14,7 +14,7 @@
 <xsl:value-of select="title"/>
 </td>
 <td>
-<xsl:value-of select="ARTIST"/>
+<xsl:value-of select="description"/>
 </td>
 </tr>
 </xsl:for-each>
