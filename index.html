@@ -39,32 +39,6 @@
 			<p><a href="http://www.google.com" target="_blank" class="btn btn-primary btn-lg">Button for testing only</a></p>
 		</div>
 	</div>
-	<!--<div class="container">-->
-	<!--	<div class="row">-->
-	<!--		<div class="col-md-12">-->
-	<!--			<h2 class="text-center">View Ads</h2>-->
-	<!--			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mollis enim. Proin rhoncus imperdiet dui id suscipit. Proin eget odio vel dolor imperdiet consectetur sit amet sed purus. Suspendisse augue diam, feugiat ut placerat sit amet, interdum-->
-	<!--				a lacus. Mauris rutrum porttitor magna at sollicitudin. Aenean justo nisl, interdum sit amet libero hendrerit, condimentum bibendum dui. Nunc feugiat commodo risus non sagittis. </p>-->
-	<!--			<a id="viewAds" href="#" class="btn btn-success" onclick="loadXMLDoc()">View Ads</a>-->
-	<!--			<br>-->
-	<!--			<br>-->
-	<!--			<table id="demo"></table>-->
-	<!--		</div>-->
-	<!--		<div class="col-md-12">-->
-	<!--			<h2 class="text-center">Submit Ad</h2>-->
-	<!--			<p class="text-justify">Duis porttitor elementum dolor, id luctus elit pharetra vel. Sed tincidunt dolor at odio auctor, at condimentum elit tincidunt. Donec porta suscipit velit, non lobortis turpis vulputate id. Mauris rutrum, dui lacinia faucibus malesuada, mi lectus-->
-	<!--				tristique leo, ac fringilla tortor urna vel orci.</p>-->
-	<!--			<a href="#" class="btn btn-success">Submit Ad</a>-->
-	<!--		</div>-->
-	<!--		<div class="col-md-12">-->
-	<!--			<h2 class="text-center">Contact Us</h2>-->
-	<!--			<p class="text-justify">Aliquam congue purus nisi, sed luctus massa maximus quis. Nulla faucibus malesuada sapien, a mollis ante consequat eget. Nunc tincidunt volutpat elementum. Maecenas lorem ex, tristique et egestas sed, placerat id mauris. Nullam accumsan orci nisi,-->
-	<!--				eget rhoncus arcu hendrerit ac. Vestibulum vulputate feugiat arcu sed luctus. Nam eget auctor lorem, in commodo lectus.</p>-->
-	<!--			<a href="#" class="btn btn-success">Contact Us</a>-->
-	<!--		</div>-->
-	<!--	</div>-->
-	<!--</div>-->
-	<!--<hr />-->
 
 	<!--responsive image 1  BG 14\11\2015-->
 	<!--<div class="container">-->
@@ -142,16 +116,43 @@
 	<div class="main">
 		<div class="accordion">
 			<div class="accordion-section">
-				<a class="accordion-section-title" href="#accordion-1">View Ads</a>
+				<a class="accordion-section-title" href="#accordion-1" onclick="loadXMLDoc()">View Ads</a>
 				<div id="accordion-1" class="accordion-section-content">
-					<p></p>
+				<br>
+				<table id="demo"></table>
 				</div><!--end .accordion-section-content-->
 			</div><!--end .accordion-section-->
 
 			<div class="accordion-section">
 				<a class="accordion-section-title" href="#accordion-2">Submit Ad</a>
 				<div id="accordion-2" class="accordion-section-content">
-					<p></p>
+					<form role="form">
+						<div class="form-group">
+							<label for="adTitle">Title:</label>
+							<input type="text" class="form-control" id="adTitle" name="adTitle" placeholder="Title" />
+						</div>
+						<div class="form-group">
+							<label for="adDescr">Description:</label>
+							<textarea type="text" class="form-control" id="adDescr" name="adDescr" placeholder="Description"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="adCat">Category:</label>
+							<input class="form-control" name="adCat" id="adCat" placeholder="Category"/>
+						</div>
+						<div class="form-group">
+							<label for="adPrice">Price:</label>
+							<input type="text" class="form-control" id="adPrice" name="adPrice" placeholder="Price" />
+						</div>
+						<div class="form-group">
+							<label for="adLoc">Location:</label>
+							<input type="text" class="form-control" id="adLoc" name="adLoc" placeholder="Location" />
+						</div>
+						<div class="form-group">
+							<label for="adSeller">Seller:</label>
+							<input class="form-control" name="adSeller" id="adSeller" placeholder="Seller details" />
+						</div>
+						<button type="submit" class="btn btn-default">Submit Ad</button>
+					</form>
 				</div><!--end .accordion-section-content-->
 			</div><!--end .accordion-section-->
 

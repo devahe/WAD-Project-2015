@@ -1,3 +1,4 @@
+//Accordion code taken from http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery#jquery
 $(document).ready(function() {
 	function close_accordion_section() {
 		$('.accordion .accordion-section-title').removeClass('active');
