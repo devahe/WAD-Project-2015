@@ -48,4 +48,3 @@ function myFunction(xml) {
   }
   document.getElementById("demo").innerHTML = table;
 }
-
