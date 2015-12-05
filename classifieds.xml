@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classifieds>
+	<advert>
+		<adTitle>Car for Sale</adTitle>
+		<adDescription>I have a nissan for sale</adDescription>
+		<adCategory>Cars</adCategory>
+		<adPrice>2000</adPrice>
+		<adLocation>Dublin</adLocation>
+		<adSeller>Dennis</adSeller>
+		<adDate>15/11/2015</adDate>
+	</advert>
+	<advert>
+		<adTitle>Puppies</adTitle>
+		<adDescription>4 german shepherds on offer</adDescription>
+		<adCategory>Animals</adCategory>
+		<adPrice>tbd</adPrice>
+		<adLocation>Cork</adLocation>
+		<adSeller>Snoop Dog</adSeller>
+		<adDate>10/10/2015</adDate>
+	</advert>
+	<advert>
+		<adTitle>a</adTitle>
+		<adDescription>b</adDescription>
+		<adCategory>c</adCategory>
+		<adPrice>1234</adPrice>
+		<adLocation>Nijmegen</adLocation>
+		<adSeller>Dennie</adSeller>
+		<adDate>05/12/2015</adDate>
+	</advert>
+</classifieds>

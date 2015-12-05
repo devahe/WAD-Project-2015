@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+  <title>Classifieds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/table.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/accordion.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<div class="navbar-static-top">
+		<!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
+		<div class="container">
+			<div class="navbar-brand">
+				Classifieds
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">Home</a></li>
+					<li><a href="">View Ads</a></li>
+					<li><a href="">Create Ad</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Classified Ads</h1>
+			<h3>Please use the below options to view all classifieds, to submit your ad or to get in touch with us.</h3>
+		</div>
+	</div>
+
+	<!--Accordion code taken from http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery#jquery-->
+	<div class="main">
+		<div class="accordion">
+			<div class="accordion-section">
+				<a class="accordion-section-title" href="#accordion-1">View Ads</a>
+				<div id="accordion-1" class="accordion-section-content">
+				<br>
+				<script> $(document).ready(function() {
+      // Create a table row variable
+      var tr;
+      // Create an AJAX request to get a JSON file and render it as inside a table
+      $.getJSON('/get/json', function(result) {
+        });
+      });</script>
+				   
+				</div><!--end .accordion-section-content-->
+			</div><!--end .accordion-section-->
+
+			<div class="accordion-section">
+				<a class="accordion-section-title" href="#accordion-2">Submit Ad</a>
+				<div id="accordion-2" class="accordion-section-content">
+					<form role="form">
+						<div class="form-group">
+							<label for="adTitle">Title:</label>
+							<input type="text" class="form-control" id="adTitle" name="adTitle" placeholder="Title" />
+						</div>
+						<div class="form-group">
+							<label for="adDescr">Description:</label>
+							<textarea type="text" class="form-control" id="adDescr" name="adDescr" placeholder="Description"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="adCat">Category:</label>
+							<select class = "form-control">
+								<option>Please select a category...</option>
+								<option>Animals</option>
+								<option>Cars</option>
+								<option>Computers</option>
+								<option>Garden</option>
+								<option>Home</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="adPrice">Price:</label>
+							<input type="text" class="form-control" id="adPrice" name="adPrice" placeholder="Price" />
+						</div>
+						<div class="form-group">
+							<label for="adLoc">Location:</label>
+							<input type="text" class="form-control" id="adLoc" name="adLoc" placeholder="Location" />
+						</div>
+						<div class="form-group">
+							<label for="adSeller">Seller:</label>
+							<input class="form-control" name="adSeller" id="adSeller" placeholder="Seller details" />
+						</div>
+						<button type="submit" class="btn btn-default" onclick="loadXMLDoc()">Submit Ad</button>
+					</form>
+				</div><!--end .accordion-section-content-->
+			</div><!--end .accordion-section-->
+
+			<div class="accordion-section">
+				<a class="accordion-section-title" href="#accordion-3">Contact Us</a>
+				<div id="accordion-3" class="accordion-section-content">
+					<form role="form">
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" />
+						</div>
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your name here" />
+
+						</div>
+					<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" /> Send me new adverts
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div><!--end .accordion-section-content-->
+			</div><!--end .accordion-section-->
+		</div><!--end .accordion-->
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+
+		</div>
+	</div>
+
+				
+
+
+</body>
+
+
+
+
+
+<!--<body>-->
+<!--  <div class="container" ng-controller="ChatController">-->
+<!--    <div class="navbar navbar-fixed-top navbar-inverse">-->
+<!--      <div class="navbar-inner">-->
+<!--        <div class="pull-right">-->
+<!--          <a href="https://c9.io" class="brand">Cloud9 IDE</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="page-header">-->
+<!--      <h1>Classifieds</h1>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--      <div class="span4">-->
+<!--        <ul class="nav nav-list well">-->
+<!--          <li class="nav-header">-->
+<!--            <button id="hide">Hide</button>-->
+<!--            <button id="show">Show</button>-->
+<!--          </li>-->
+<!--          <li ng-repeat="user in roster" ng-bind="user">-->
+<!--            <form method="post" id="form" action="/post/json">-->
+<!--              <input type="text" name="adTitle">-->
+<!--              <input type="text" name="adDescription">-->
+<!--              <input type="text" name="adCategory">-->
+<!--              <input type="text" name="adPrice">-->
+<!--              <input type="text" name="adLocation">-->
+<!--              <input type="text" name="adSeller">-->
+<!--              <input type="text" name="adDate">-->
+<!--              <input type="submit" value="Submit">-->
+<!--            </form>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <div class="span8">-->
+<!--        <table>-->
+<!--          <tr>-->
+<!--            <th>Title</th>-->
+<!--            <th>Description</th>-->
+<!--            <th>Category</th>-->
+<!--            <th>Price</th>-->
+<!--            <th>Location</th>-->
+<!--            <th>Seller</th>-->
+<!--            <th>Date</th>-->
+<!--          </tr>-->
+<!--        </table>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</body>-->
+
+</html>

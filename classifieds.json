@@ -1,0 +1,31 @@
+{
+    "advert": [
+        {
+            "adTitle": "Car for Sale",
+            "adDescription": "I have a nissan for sale",
+            "adCategory": "Cars",
+            "adPrice": "2000",
+            "adLocation": "Dublin",
+            "adSeller": "Dennis",
+            "adDate": "15/11/2015"
+        },
+        {
+            "adTitle": "Puppies",
+            "adDescription": "4 german shepherds on offer",
+            "adCategory": "Animals",
+            "adPrice": "tbd",
+            "adLocation": "Cork",
+            "adSeller": "Snoop Dog",
+            "adDate": "10/10/2015"
+        },
+        {
+            "adTitle": "a",
+            "adDescription": "b",
+            "adCategory": "c",
+            "adPrice": "1234",
+            "adLocation": "Nijmegen",
+            "adSeller": "Dennie",
+            "adDate": "05/12/2015"
+        }
+    ]
+}
