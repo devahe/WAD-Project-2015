@@ -26,33 +26,6 @@
             "adLocation": "Nijmegen",
             "adSeller": "Dennie",
             "adDate": "05/12/2015"
-        },
-        {
-            "adTitle": "asdf",
-            "adDescription": "sadf",
-            "adCategory": "sadf",
-            "adPrice": "sadf",
-            "adLocation": "sadf",
-            "adSeller": "asdf",
-            "adDate": "asdf"
-        },
-        {
-            "adTitle": "asdf",
-            "adDescription": "sfdf",
-            "adCategory": "fdsf",
-            "adPrice": "fsdfsd",
-            "adLocation": "sdfsd",
-            "adSeller": "sdfsdf",
-            "adDate": "sdfsdf"
-        },
-        {
-            "adTitle": "432",
-            "adDescription": "asfdasfsfasdfasdfasdfasfasdfasfasdfasddfsadfdsafadsfasdfsadfasdfsadfdsaf",
-            "adCategory": "4324",
-            "adPrice": "4234",
-            "adLocation": "4234",
-            "adSeller": "4234",
-            "adDate": "4234"
         }
     ]
 }

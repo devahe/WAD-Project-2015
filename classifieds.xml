@@ -18,40 +18,4 @@
 		<adSeller>Snoop Dog</adSeller>
 		<adDate>10/10/2015</adDate>
 	</advert>
-	<advert>
-		<adTitle>a</adTitle>
-		<adDescription>b</adDescription>
-		<adCategory>c</adCategory>
-		<adPrice>1234</adPrice>
-		<adLocation>Nijmegen</adLocation>
-		<adSeller>Dennie</adSeller>
-		<adDate>05/12/2015</adDate>
-	</advert>
-	<advert>
-		<adTitle>asdf</adTitle>
-		<adDescription>sadf</adDescription>
-		<adCategory>sadf</adCategory>
-		<adPrice>sadf</adPrice>
-		<adLocation>sadf</adLocation>
-		<adSeller>asdf</adSeller>
-		<adDate>asdf</adDate>
-	</advert>
-	<advert>
-		<adTitle>asdf</adTitle>
-		<adDescription>sfdf</adDescription>
-		<adCategory>fdsf</adCategory>
-		<adPrice>fsdfsd</adPrice>
-		<adLocation>sdfsd</adLocation>
-		<adSeller>sdfsdf</adSeller>
-		<adDate>sdfsdf</adDate>
-	</advert>
-	<advert>
-		<adTitle>432</adTitle>
-		<adDescription>asfdasfsfasdfasdfasdfasfasdfasfasdfasddfsadfdsafadsfasdfsadfasdfsadfdsaf</adDescription>
-		<adCategory>4324</adCategory>
-		<adPrice>4234</adPrice>
-		<adLocation>4234</adLocation>
-		<adSeller>4234</adSeller>
-		<adDate>4234</adDate>
-	</advert>
 </classifieds>
