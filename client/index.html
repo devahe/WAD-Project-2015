@@ -8,10 +8,35 @@
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="/css/styles.css" />
   <script src="/js/jquery.min.js"></script>
-  <script src="/js/table.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/js/accordion.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Create a table row variable
+      var tr;
+      // Create an AJAX request to get a JSON file and render it as inside a table
+      $.getJSON('/get/json', function(result) {
+        // Loop throgh JSON file to determine top-level objects (country array in our case)
+        $.each(result, function(key, data) {
+          // Loop throgh each object inside country array
+          $.each(data, function(index, field) {
+            // Build a table row and append to the only existing table
+                tr = $('<tr/>');
+                //tr.attr('class', field.title);
+                tr.append("<td>" + field.adTitle + "</td>");
+                tr.append("<td>" + field.adDescription + "</td>");
+                tr.append("<td>" + field.adCategory + "</td>");
+                tr.append("<td>" + field.adPrice + "</td>");
+                tr.append("<td>" + field.adLocation + "</td>");
+                tr.append("<td>" + field.adSeller + "</td>");
+                tr.append("<td>" + field.adDate + "</td>");
+                $('table').append(tr);
+          });
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -48,54 +73,86 @@
 				<a class="accordion-section-title" href="#accordion-1">View Ads</a>
 				<div id="accordion-1" class="accordion-section-content">
 				<br>
-				<script> $(document).ready(function() {
-      // Create a table row variable
-      var tr;
-      // Create an AJAX request to get a JSON file and render it as inside a table
-      $.getJSON('/get/json', function(result) {
-        });
-      });</script>
-				   
+				         <div class="span8">
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Location</th>
+            <th>Seller</th>
+            <th>Date</th>
+          </tr>
+        </table>
 				</div><!--end .accordion-section-content-->
 			</div><!--end .accordion-section-->
 
 			<div class="accordion-section">
 				<a class="accordion-section-title" href="#accordion-2">Submit Ad</a>
 				<div id="accordion-2" class="accordion-section-content">
-					<form role="form">
-						<div class="form-group">
-							<label for="adTitle">Title:</label>
-							<input type="text" class="form-control" id="adTitle" name="adTitle" placeholder="Title" />
-						</div>
-						<div class="form-group">
-							<label for="adDescr">Description:</label>
-							<textarea type="text" class="form-control" id="adDescr" name="adDescr" placeholder="Description"></textarea>
-						</div>
-						<div class="form-group">
-							<label for="adCat">Category:</label>
-							<select class = "form-control">
-								<option>Please select a category...</option>
-								<option>Animals</option>
-								<option>Cars</option>
-								<option>Computers</option>
-								<option>Garden</option>
-								<option>Home</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="adPrice">Price:</label>
-							<input type="text" class="form-control" id="adPrice" name="adPrice" placeholder="Price" />
-						</div>
-						<div class="form-group">
-							<label for="adLoc">Location:</label>
-							<input type="text" class="form-control" id="adLoc" name="adLoc" placeholder="Location" />
-						</div>
-						<div class="form-group">
-							<label for="adSeller">Seller:</label>
-							<input class="form-control" name="adSeller" id="adSeller" placeholder="Seller details" />
-						</div>
-						<button type="submit" class="btn btn-default" onclick="loadXMLDoc()">Submit Ad</button>
-					</form>
+					
+					<div class="row">
+      <div class="span4">
+        <ul class="nav nav-list well">
+         <li ng-repeat="user in roster" ng-bind="user">
+            <form method="post" id="form" action="/post/json"></li>
+              <li><label for="adTitle" style="width:100px">Title</label>
+              	<input type="text" name="adTitle"></li>
+              <li><label for="adDescription" style="width:100px">Description</label>
+              	<textarea type="text" name="adDescription"></textarea></li>
+              <li><label for="adCategory" style="width:100px">Category</label>
+              	<input type="text" name="adCategory"></li>
+              <li><label for="adPrice" style="width:100px">Price</label>
+              	<input type="text" name="adPrice"></li>
+              <li><label for="adLocation" style="width:100px">Location</label>
+              	<input type="text" name="adLocation"></li>
+              <li><label for="adSeller" style="width:100px">Seller</label>
+              	<input type="text" name="adSeller"></li>
+              <li><label for="adDate" style="width:100px">Date</label>
+              	<input type="text" name="adDate"></li>
+              <li><input type="submit" value="Submit"></li>
+            </form>
+        	</li>
+        </ul>
+      </div>
+				</div>	
+					
+					
+					<!--<form role="form">-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adTitle">Title:</label>-->
+					<!--		<input type="text" class="form-control" id="adTitle" name="adTitle" placeholder="Title" />-->
+					<!--	</div>-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adDescr">Description:</label>-->
+					<!--		<textarea type="text" class="form-control" id="adDescr" name="adDescr" placeholder="Description"></textarea>-->
+					<!--	</div>-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adCat">Category:</label>-->
+					<!--		<select class = "form-control">-->
+					<!--			<option>Please select a category...</option>-->
+					<!--			<option>Animals</option>-->
+					<!--			<option>Cars</option>-->
+					<!--			<option>Computers</option>-->
+					<!--			<option>Garden</option>-->
+					<!--			<option>Home</option>-->
+					<!--		</select>-->
+					<!--	</div>-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adPrice">Price:</label>-->
+					<!--		<input type="text" class="form-control" id="adPrice" name="adPrice" placeholder="Price" />-->
+					<!--	</div>-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adLoc">Location:</label>-->
+					<!--		<input type="text" class="form-control" id="adLoc" name="adLoc" placeholder="Location" />-->
+					<!--	</div>-->
+					<!--	<div class="form-group">-->
+					<!--		<label for="adSeller">Seller:</label>-->
+					<!--		<input class="form-control" name="adSeller" id="adSeller" placeholder="Seller details" />-->
+					<!--	</div>-->
+					<!--	<button type="submit" class="btn btn-default" onclick="loadXMLDoc()">Submit Ad</button>-->
+					<!--</form>-->
 				</div><!--end .accordion-section-content-->
 			</div><!--end .accordion-section-->
 
