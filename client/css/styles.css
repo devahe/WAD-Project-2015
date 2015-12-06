@@ -1,7 +1,7 @@
 .jumbotron {
     background-image: url('../img/classifieds.png');
     background-attachment: fixed;
-    min-height: 250px;
+    min-height: 200px;
     margin-bottom: 0px;
 }
 
@@ -10,6 +10,15 @@
     position: relative;
     top: 50%;
     left: 50%;
+}
+
+#header, h1, h2 {
+    text-align:center;
+}
+
+table {
+    margin: 0 auto;
+    background:white;
 }
 
 table,
@@ -41,15 +50,16 @@ td {
 /*----- Section Titles -----*/
 .accordion-section-title {
     width:100%;
-    padding:15px;
+    padding:30px;
     display:inline-block;
-    border-bottom:1px solid #1a1a1a;
-    background:#333;
-    transition:all linear 0.15s;
+    border:1px solid black;
+    background:#DEB887;
+    transition:all linear 0.25s;
     /* Type */
-    font-size:1.200em;
+    font-size:2.500em;
     text-shadow:0px 1px 0px #1a1a1a;
-    color:#fff;
+    color:black;
+    text-align:center;
 }
  
 .accordion-section-title.active, .accordion-section-title:hover {
@@ -66,10 +76,19 @@ td {
 .accordion-section-content {
     padding:15px;
     display:none;
+    background-color:#FFE4C4;
+    
 }
 
 .footer{
     background:#333;
-    min-height:150px;
+    min-height:100px;
     text-align:center;
+}
+
+/*code from http://stackoverflow.com/questions/5119711/whats-the-easiest-way-to-put-space-between-2-side-by-side-buttons-in-asp-net*/
+.divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
 }

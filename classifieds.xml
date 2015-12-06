@@ -133,4 +133,13 @@ sdf
 		<adSeller>me</adSeller>
 		<adDate>2015-12-06</adDate>
 	</advert>
+	<advert>
+		<adTitle>fuck</adTitle>
+		<adDescription>fuck</adDescription>
+		<adCategory>Cars</adCategory>
+		<adPrice>sajadls;f</adPrice>
+		<adLocation>adfjsdjf</adLocation>
+		<adSeller>jafl;dsajkf</adSeller>
+		<adDate>2015-12-06</adDate>
+	</advert>
 </classifieds>
