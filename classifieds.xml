@@ -142,4 +142,31 @@ sdf
 		<adSeller>jafl;dsajkf</adSeller>
 		<adDate>2015-12-06</adDate>
 	</advert>
+	<advert>
+		<adTitle>asfd</adTitle>
+		<adDescription>gasdfs</adDescription>
+		<adCategory>Health</adCategory>
+		<adPrice>asfasdf</adPrice>
+		<adLocation>asdfadsf</adLocation>
+		<adSeller>sadfasdf</adSeller>
+		<adDate>2015-12-06</adDate>
+	</advert>
+	<advert>
+		<adTitle>fdsafds</adTitle>
+		<adDescription>sdafsadf</adDescription>
+		<adCategory>Computers</adCategory>
+		<adPrice>dsfasd</adPrice>
+		<adLocation>dsafsda</adLocation>
+		<adSeller>asdfads</adSeller>
+		<adDate>2015-12-06</adDate>
+	</advert>
+	<advert>
+		<adTitle>fdsafs</adTitle>
+		<adDescription>fdsaf</adDescription>
+		<adCategory>Health</adCategory>
+		<adPrice>asfsd</adPrice>
+		<adLocation>asdfasd</adLocation>
+		<adSeller>asdfsadf</adSeller>
+		<adDate>2015-12-06</adDate>
+	</advert>
 </classifieds>
