@@ -115,4 +115,22 @@ sdf
 		<adSeller></adSeller>
 		<adDate></adDate>
 	</advert>
+	<advert>
+		<adTitle>Treadmill for sale</adTitle>
+		<adDescription>Hi, I have a hardly ever user treadmill ready to be collected</adDescription>
+		<adCategory>Health</adCategory>
+		<adPrice>200</adPrice>
+		<adLocation>Dublin</adLocation>
+		<adSeller>Dennis</adSeller>
+		<adDate>vandaag</adDate>
+	</advert>
+	<advert>
+		<adTitle>test</adTitle>
+		<adDescription>testing</adDescription>
+		<adCategory>Computers</adCategory>
+		<adPrice>31</adPrice>
+		<adLocation>here</adLocation>
+		<adSeller>me</adSeller>
+		<adDate>2015-12-06</adDate>
+	</advert>
 </classifieds>

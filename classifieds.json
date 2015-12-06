@@ -107,6 +107,24 @@
             "adLocation": "",
             "adSeller": "",
             "adDate": ""
+        },
+        {
+            "adTitle": "Treadmill for sale",
+            "adDescription": "Hi, I have a hardly ever user treadmill ready to be collected",
+            "adCategory": "Health",
+            "adPrice": "200",
+            "adLocation": "Dublin",
+            "adSeller": "Dennis",
+            "adDate": "vandaag"
+        },
+        {
+            "adTitle": "test",
+            "adDescription": "testing",
+            "adCategory": "Computers",
+            "adPrice": "31",
+            "adLocation": "here",
+            "adSeller": "me",
+            "adDate": "2015-12-06"
         }
     ]
 }
