@@ -18,4 +18,101 @@
 		<adSeller>Snoop Dog</adSeller>
 		<adDate>10/10/2015</adDate>
 	</advert>
+	<advert>
+		<adTitle>a</adTitle>
+		<adDescription>b</adDescription>
+		<adCategory>c</adCategory>
+		<adPrice>1234</adPrice>
+		<adLocation>Nijmegen</adLocation>
+		<adSeller>Dennie</adSeller>
+		<adDate>05/12/2015</adDate>
+	</advert>
+	<advert>
+		<adTitle>abasdf</adTitle>
+		<adDescription>asdfs</adDescription>
+		<adCategory>asfasdf</adCategory>
+		<adPrice>safasdf</adPrice>
+		<adLocation>sddf</adLocation>
+		<adSeller>sfasdf</adSeller>
+		<adDate>sfasdf</adDate>
+	</advert>
+	<advert>
+		<adTitle></adTitle>
+		<adDescription></adDescription>
+		<adCategory></adCategory>
+		<adPrice></adPrice>
+		<adLocation></adLocation>
+		<adSeller></adSeller>
+		<adDate>1234</adDate>
+	</advert>
+	<advert>
+		<adTitle>h</adTitle>
+		<adDescription>h</adDescription>
+		<adCategory>h</adCategory>
+		<adPrice>h</adPrice>
+		<adLocation>here</adLocation>
+		<adSeller>h</adSeller>
+		<adDate></adDate>
+	</advert>
+	<advert>
+		<adTitle>4323</adTitle>
+		<adDescription>rtr</adDescription>
+		<adCategory>etret</adCategory>
+		<adPrice>etert</adPrice>
+		<adLocation>etert</adLocation>
+		<adSeller>etert</adSeller>
+		<adDate>etert</adDate>
+	</advert>
+	<advert>
+		<adTitle>tytr</adTitle>
+		<adDescription>ryrty</adDescription>
+		<adCategory>yrtyr</adCategory>
+		<adPrice>rtyrty</adPrice>
+		<adLocation>ryrty</adLocation>
+		<adSeller>ryrty</adSeller>
+		<adDate>rtyr</adDate>
+	</advert>
+	<advert>
+		<adTitle>jgfh</adTitle>
+		<adDescription>fdghdfg</adDescription>
+		<adCategory>fdghfgh</adCategory>
+		<adPrice>fhggf</adPrice>
+		<adLocation>fghfgh</adLocation>
+		<adSelle>fghgfh</adSelle>
+		<adDate>fgh</adDate>
+	</advert>
+	<advert>
+		<adTitle>safadsf</adTitle>
+		<adDescription>asdfsfasfdsfasdf
+sfdsf
+sfasdf
+
+sf
+asdf
+sdf
+</adDescription>
+		<adCategory></adCategory>
+		<adPrice></adPrice>
+		<adLocation></adLocation>
+		<adSeller></adSeller>
+		<adDate></adDate>
+	</advert>
+	<advert>
+		<adTitle></adTitle>
+		<adDescription></adDescription>
+		<adCategory>Please select category...</adCategory>
+		<adPrice></adPrice>
+		<adLocation></adLocation>
+		<adSeller></adSeller>
+		<adDate></adDate>
+	</advert>
+	<advert>
+		<adTitle>sadfds</adTitle>
+		<adDescription>safdsf</adDescription>
+		<adCategory>Please select category...</adCategory>
+		<adPrice></adPrice>
+		<adLocation></adLocation>
+		<adSeller></adSeller>
+		<adDate></adDate>
+	</advert>
 </classifieds>

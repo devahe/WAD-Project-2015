@@ -40,7 +40,7 @@
 </head>
 
 <body>
-	<div class="navbar-static-top">
+	<div class="navbar-fixed-top navbar-inverse">
 		<!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
 		<div class="container">
 			<div class="navbar-brand">
@@ -51,10 +51,10 @@
 			</button>
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="">Home</a></li>
-					<li><a href="">View Ads</a></li>
-					<li><a href="">Create Ad</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">View Ads</a></li>
+					<li><a href="#">Create Ad</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -94,49 +94,60 @@
 					<a class="accordion-section-title" href="#accordion-2">Submit Ad</a>
 					<div id="accordion-2" class="accordion-section-content">
 
-						<div class="row">
-							<div class="span4">
-								<ul class="nav nav-list well">
-									<li ng-repeat="user in roster" ng-bind="user">
-										<form method="post" id="form" action="/post/json">
-									</li>
-									<li>
-										<label for="adTitle" style="width:100px">Title</label>
-										<input type="text" name="adTitle">
-									</li>
-									<li>
-										<label for="adDescription" style="width:100px">Description</label>
-										<textarea type="text" name="adDescription"></textarea>
-									</li>
-									<li>
-										<label for="adCategory" style="width:100px">Category</label>
-										<input type="text" name="adCategory">
-									</li>
-									<li>
-										<label for="adPrice" style="width:100px">Price</label>
-										<input type="text" name="adPrice">
-									</li>
-									<li>
-										<label for="adLocation" style="width:100px">Location</label>
-										<input type="text" name="adLocation">
-									</li>
-									<li>
-										<label for="adSeller" style="width:100px">Seller</label>
-										<input type="text" name="adSeller">
-									</li>
-									<li>
-										<label for="adDate" style="width:100px">Date</label>
-										<input type="text" name="adDate">
-									</li>
-									<li>
-										<input type="submit" value="Submit">
-									</li>
-									</form>
-									</li>
-								</ul>
+						<form role="form"class="form-horizontal" method="post" id="form" action="/post/json">
+							<div class="form-group">
+								<label for="adTitle" class="control-label col-sm-2">Title:</label>
+									<div class="col-sm-5">
+										<input type="text" required class="form-control" id="adTitle" name="adTitle" placeholder="enter title here" />
+									</div>
 							</div>
-						</div>
-
+							<div class="form-group">
+								<label for="adDescription" class="control-label col-sm-2">Description:</label>
+									<div class="col-sm-5">
+										<textarea type="text" required class="form-control" id="adDescription" name="adDescription" placeholder="enter description here"></textarea>
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="adCategory" class="control-label col-sm-2">Category:</label>
+									<div class="col-sm-5">
+										<select class="form-control" required id="adCategory" name="adCategory">
+											<option>Please select category...</option>
+											<option>Appliances</option>
+											<option>Cars</option>
+											<option>Computers</option>
+											<option>Electronics</option>
+											<option>Health</option>
+											<option>Home & Garden</option>
+											<option>Pets</option>
+										</select>
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="adPrice" class="control-label col-sm-2">Price:</label>
+									<div class="col-sm-5">
+										<input type="text" required class="form-control" id="adPrice" name="adPrice" placeholder="enter price here" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="adLocation" class="control-label col-sm-2">Location:</label>
+									<div class="col-sm-5">
+										<input type="text" required class="form-control" id="adLocation" name="adLocation" placeholder="enter location here" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="adSeller" class="control-label col-sm-2">Seller:</label>
+									<div class="col-sm-5">
+										<input type="text" required class="form-control" id="adSeller" name="adSeller" placeholder="enter your name here" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="adDate" class="control-label col-sm-2">Date:</label>
+									<div class="col-sm-5">
+										<input type="text" required class="form-control" id="adDate" name="adDate" placeholder="enter date here" />
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
 					</div>
 					<!--end .accordion-section-content-->
 				</div>
@@ -178,6 +189,14 @@
 			</div>
 		</div>
 
+		<div class="footer">
+			<div class="container">
+				<footer>
+					<br/><a>Back to Top</a>
+				</footer>
+			</div>
+		</div>
+		
 </body>
 
 </html>

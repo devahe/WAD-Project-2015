@@ -67,3 +67,9 @@ td {
     padding:15px;
     display:none;
 }
+
+.footer{
+    background:#333;
+    min-height:150px;
+    text-align:center;
+}
