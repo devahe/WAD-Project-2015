@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="/css/styles.css" />
 	<script src="/js/jquery.min.js"></script>
+	<script src="/js/test.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/accordion.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -42,25 +43,19 @@
 	<script type="text/javascript">
 		function SetDate() {
 			var date = new Date();
-
 			var day = date.getDate();
 			var month = date.getMonth() + 1;
 			var year = date.getFullYear();
-
 			if (month < 10) month = "0" + month;
 			if (day < 10) day = "0" + day;
-
 			var today = year + "-" + month + "-" + day;
-
-
 			document.getElementById('myDate').value = today;
 		}
 	</script>
-
 </head>
 
 <body onload="SetDate();">
-	<div class="navbar-fixed-top navbar-inverse">
+	<div class="navbar-fixed-top navbar-inverse" id="topPage">
 		<!--added following Sam Cogan's YouTube vid on Bootstrap DvH 04.11.2015-->
 		<div class="container">
 			<div class="navbar-brand">
@@ -71,10 +66,10 @@
 			</button>
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">View Ads</a></li>
-					<li><a href="#">Create Ad</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#topPage" onClick="window.location.reload()">Home</a></li>
+					<li><a href="#viewAdv" onclick="document.getElementById('viewAdv').click()">View Ads</a></li> <!--onclick code from http://stackoverflow.com/questions/347512/fake-click-to-activate-an-onclick-method-->
+					<li><a href="#submitAdv" onclick="document.getElementById('submitAdv').click()">Submit Ad</a></li>
+					<li><a href="#contactUs" onclick="document.getElementById('contactUs').click()">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -90,7 +85,7 @@
 	<div class="main">
 		<div class="accordion">
 			<div class="accordion-section">
-				<a class="accordion-section-title" href="#accordion-1">View Ads</a>
+				<a class="accordion-section-title" href="#accordion-1" id="viewAdv">View Ads</a>
 				<div id="accordion-1" class="accordion-section-content">
 					<br>
 					<div class="span8">
@@ -111,7 +106,7 @@
 				<!--end .accordion-section-->
 
 				<div class="accordion-section">
-					<a class="accordion-section-title" href="#accordion-2">Submit Ad</a>
+					<a class="accordion-section-title" href="#accordion-2" id="submitAdv">Submit Ad</a>
 					<div id="accordion-2" class="accordion-section-content">
 
 						<form role="form" class="form-horizontal" method="post" id="form" action="/post/json">
@@ -175,7 +170,7 @@
 				<!--end .accordion-section-->
 
 				<div class="accordion-section">
-					<a class="accordion-section-title" href="#accordion-3">Contact Us</a>
+					<a class="accordion-section-title" href="#accordion-3" id="contactUs">Contact Us</a>
 					<div id="accordion-3" class="accordion-section-content">
 						<form role="form">
 							<div class="form-group">
