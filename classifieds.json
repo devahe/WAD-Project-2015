@@ -6,161 +6,26 @@
             "adCategory": "Cars",
             "adPrice": "2000",
             "adLocation": "Dublin",
-            "adSeller": "Dennis",
-            "adDate": "15/11/2015"
+            "adSeller": "seller@selling.buy",
+            "adDate": "2015-11-12"
         },
         {
-            "adTitle": "Puppies",
-            "adDescription": "4 german shepherds on offer",
-            "adCategory": "Animals",
-            "adPrice": "tbd",
-            "adLocation": "Cork",
-            "adSeller": "Snoop Dog",
-            "adDate": "10/10/2015"
-        },
-        {
-            "adTitle": "a",
-            "adDescription": "b",
-            "adCategory": "c",
-            "adPrice": "1234",
-            "adLocation": "Nijmegen",
-            "adSeller": "Dennie",
-            "adDate": "05/12/2015"
-        },
-        {
-            "adTitle": "abasdf",
-            "adDescription": "asdfs",
-            "adCategory": "asfasdf",
-            "adPrice": "safasdf",
-            "adLocation": "sddf",
-            "adSeller": "sfasdf",
-            "adDate": "sfasdf"
-        },
-        {
-            "adTitle": "",
-            "adDescription": "",
-            "adCategory": "",
-            "adPrice": "",
-            "adLocation": "",
-            "adSeller": "",
-            "adDate": "1234"
-        },
-        {
-            "adTitle": "h",
-            "adDescription": "h",
-            "adCategory": "h",
-            "adPrice": "h",
-            "adLocation": "here",
-            "adSeller": "h",
-            "adDate": ""
-        },
-        {
-            "adTitle": "4323",
-            "adDescription": "rtr",
-            "adCategory": "etret",
-            "adPrice": "etert",
-            "adLocation": "etert",
-            "adSeller": "etert",
-            "adDate": "etert"
-        },
-        {
-            "adTitle": "tytr",
-            "adDescription": "ryrty",
-            "adCategory": "yrtyr",
-            "adPrice": "rtyrty",
-            "adLocation": "ryrty",
-            "adSeller": "ryrty",
-            "adDate": "rtyr"
-        },
-        {
-            "adTitle": "jgfh",
-            "adDescription": "fdghdfg",
-            "adCategory": "fdghfgh",
-            "adPrice": "fhggf",
-            "adLocation": "fghfgh",
-            "adSelle": "fghgfh",
-            "adDate": "fgh"
-        },
-        {
-            "adTitle": "safadsf",
-            "adDescription": "asdfsfasfdsfasdf\r\nsfdsf\r\nsfasdf\r\n\r\nsf\r\nasdf\r\nsdf\r\n",
-            "adCategory": "",
-            "adPrice": "",
-            "adLocation": "",
-            "adSeller": "",
-            "adDate": ""
-        },
-        {
-            "adTitle": "",
-            "adDescription": "",
-            "adCategory": "Please select category...",
-            "adPrice": "",
-            "adLocation": "",
-            "adSeller": "",
-            "adDate": ""
-        },
-        {
-            "adTitle": "sadfds",
-            "adDescription": "safdsf",
-            "adCategory": "Please select category...",
-            "adPrice": "",
-            "adLocation": "",
-            "adSeller": "",
-            "adDate": ""
-        },
-        {
-            "adTitle": "Treadmill for sale",
-            "adDescription": "Hi, I have a hardly ever user treadmill ready to be collected",
-            "adCategory": "Health",
-            "adPrice": "200",
+            "adTitle": "Dell laptop",
+            "adDescription": "brand-new dell laptop, slightly damaged",
+            "adCategory": "Computers",
+            "adPrice": "400",
             "adLocation": "Dublin",
-            "adSeller": "Dennis",
-            "adDate": "vandaag"
+            "adSeller": "devahe@hotmail.com",
+            "adDate": "2015-12-07"
         },
         {
-            "adTitle": "test",
-            "adDescription": "testing",
-            "adCategory": "Computers",
-            "adPrice": "31",
-            "adLocation": "here",
-            "adSeller": "me",
-            "adDate": "2015-12-06"
-        },
-        {
-            "adTitle": "fuck",
-            "adDescription": "fuck",
-            "adCategory": "Cars",
-            "adPrice": "sajadls;f",
-            "adLocation": "adfjsdjf",
-            "adSeller": "jafl;dsajkf",
-            "adDate": "2015-12-06"
-        },
-        {
-            "adTitle": "asfd",
-            "adDescription": "gasdfs",
-            "adCategory": "Health",
-            "adPrice": "asfasdf",
-            "adLocation": "asdfadsf",
-            "adSeller": "sadfasdf",
-            "adDate": "2015-12-06"
-        },
-        {
-            "adTitle": "fdsafds",
-            "adDescription": "sdafsadf",
-            "adCategory": "Computers",
-            "adPrice": "dsfasd",
-            "adLocation": "dsafsda",
-            "adSeller": "asdfads",
-            "adDate": "2015-12-06"
-        },
-        {
-            "adTitle": "fdsafs",
-            "adDescription": "fdsaf",
-            "adCategory": "Health",
-            "adPrice": "asfsd",
-            "adLocation": "asdfasd",
-            "adSeller": "asdfsadf",
-            "adDate": "2015-12-06"
+            "adTitle": "Xmas decorations",
+            "adDescription": "Artificial tree, ornaments, two sets of coloured lights",
+            "adCategory": "Home & Garden",
+            "adPrice": "75",
+            "adLocation": "Tallaght",
+            "adSeller": "therealsanta@eircom.ie",
+            "adDate": "2015-12-07"
         }
     ]
 }

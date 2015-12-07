@@ -30,7 +30,7 @@
                     <th>Category</th>
                     <th>Price</th>
                     <th>Location</th>
-                    <th>Seller</th>
+                    <th>Seller e-mail</th>
                     <th>Date</th>
                 </tr>
                 <xsl:for-each select="classifieds/advert">
