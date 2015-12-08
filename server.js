@@ -1,3 +1,4 @@
+//Below code taken from mikhail-nci/ajax-test Github repository
 var http = require('http');
 var path = require('path');
 var express = require('express');
@@ -52,7 +53,7 @@ router.post('/post/json', function(req, res) {
     // Parse the JSON file in order to be able to edit it 
     var JSONparsed = JSON.parse(JSONfile);
 
-    // Add a new record into country array within the JSON file    
+    // Add a new record into advert array within the JSON file    
     JSONparsed.advert.push(obj);
 
     // Beautify the resulting JSON file

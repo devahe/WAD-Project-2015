@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="/css/styles.css" />
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/buttons.js"></script>
+	<script src="/js/effects.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/accordion.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -20,7 +21,7 @@
 			$.getJSON('/get/json', function(result) {
 				// Loop throgh JSON file to determine top-level objects (country array in our case)
 				$.each(result, function(key, data) {
-					// Loop throgh each object inside country array
+					// Loop through each object inside classifieds array
 					$.each(data, function(index, field) {
 						// Build a table row and append to the only existing table
 						tr = $('<tr/>');
@@ -52,6 +53,7 @@
 			document.getElementById('myDate').value = today;
 		}
 	</script>
+
 </head>
 
 <body onload="SetDate();" id="topPage">
@@ -67,7 +69,8 @@
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#topPage" onClick="window.location.reload()">Home</a></li>
-					<li><a href="#viewAdv" onclick="document.getElementById('viewAdv').click()">View Ads</a></li> <!--onclick code from http://stackoverflow.com/questions/347512/fake-click-to-activate-an-onclick-method-->
+					<li><a href="#viewAdv" onclick="document.getElementById('viewAdv').click()">View Ads</a></li>
+					<!--onclick code from http://stackoverflow.com/questions/347512/fake-click-to-activate-an-onclick-method-->
 					<li><a href="#submitAdv" onclick="document.getElementById('submitAdv').click()">Submit Ad</a></li>
 					<li><a href="#contactUs" onclick="document.getElementById('contactUs').click()">Contact</a></li>
 				</ul>
@@ -76,8 +79,8 @@
 	</div>
 	<div class="jumbotron" id="header">
 		<div class="container">
-			<h1>Classifieds</h1>
-			<h2>Browse our Ad database or submit your own advert - sale's on now!</h2>
+			<h1 id="header1">Classifieds</h1>
+			<h2 id="header2">Browse our Ad database or submit your own advert - sale's on now!</h2>
 		</div>
 	</div>
 
@@ -165,7 +168,7 @@
 									<button type="submit" class="btn btn-default" id="submitBtn">Submit Ad</button>
 								</div>
 							</div>
-							
+
 						</form>
 					</div>
 					<!--end .accordion-section-content-->
@@ -197,15 +200,15 @@
 							<div class="form-group">
 								<div class="col-sm-2"></div>
 								<div class="col-sm-5">
-								<input type="checkbox" /> Send me new adverts
-								<br />
-								<br />
-								<button type="reset" class="btn btn-default" value="Reset">Clear Fields</button>
-								<div class="divider"></div>
-								<button type="submit" class="btn btn-default" id="contactBtn">Submit</button>
+									<input type="checkbox" /> Send me new adverts
+									<br />
+									<br />
+									<button type="reset" class="btn btn-default" value="Reset">Clear Fields</button>
+									<div class="divider"></div>
+									<button type="submit" class="btn btn-default" id="contactBtn">Submit</button>
 								</div>
 							</div>
-							
+
 						</form>
 					</div>
 					<!--end .accordion-section-content-->
@@ -225,6 +228,11 @@
 			<div class="container">
 				<footer>
 					<br/><a href="#topPage" onClick="window.location.reload(false)">Back to Top</a>
+					<div class="divider"></div>
+					<a href="../rss.xml">
+						<div class="divider"></div>
+						<img src="/img/pic_rss.gif" width="36" height="14">
+					</a>
 				</footer>
 			</div>
 		</div>

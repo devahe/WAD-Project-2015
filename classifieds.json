@@ -26,6 +26,24 @@
             "adLocation": "Tallaght",
             "adSeller": "therealsanta@eircom.ie",
             "adDate": "2015-12-07"
+        },
+        {
+            "adTitle": "Pups",
+            "adDescription": "Litter of Rottweilers - perfect Christmas present",
+            "adCategory": "Pets",
+            "adPrice": "tbd",
+            "adLocation": "Smithfield, Dublin",
+            "adSeller": "woofs@gmail.com",
+            "adDate": "2015-12-07"
+        },
+        {
+            "adTitle": "Treadmill on offer",
+            "adDescription": "excellent condition (eventually)",
+            "adCategory": "Health",
+            "adPrice": "485",
+            "adLocation": "Galway",
+            "adSeller": "seller@sold.ie",
+            "adDate": "2015-12-08"
         }
     ]
 }

@@ -27,4 +27,22 @@
 		<adSeller>therealsanta@eircom.ie</adSeller>
 		<adDate>2015-12-07</adDate>
 	</advert>
+	<advert>
+		<adTitle>Pups</adTitle>
+		<adDescription>Litter of Rottweilers - perfect Christmas present</adDescription>
+		<adCategory>Pets</adCategory>
+		<adPrice>tbd</adPrice>
+		<adLocation>Smithfield, Dublin</adLocation>
+		<adSeller>woofs@gmail.com</adSeller>
+		<adDate>2015-12-07</adDate>
+	</advert>
+	<advert>
+		<adTitle>Treadmill on offer</adTitle>
+		<adDescription>excellent condition (eventually)</adDescription>
+		<adCategory>Health</adCategory>
+		<adPrice>485</adPrice>
+		<adLocation>Galway</adLocation>
+		<adSeller>seller@sold.ie</adSeller>
+		<adDate>2015-12-08</adDate>
+	</advert>
 </classifieds>
